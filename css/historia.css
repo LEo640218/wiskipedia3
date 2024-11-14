@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif; 
+    color: #333;
+    background-size: cover; 
+    background-position: center; 
+    border: 8px solid #fff; 
+    background-color: rgb(175, 177, 177);
+}
+
+header {
+    background-color: #008099;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header p {
+    font-size: 1.1em;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 1.5em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.5em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    border-bottom: 2px solid #33ffe4;
+}
+
+.historia {
+    background-color: white;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideInUp 1s ease-in-out;
+}
+
+.historia h2 {
+    font-size: 2.2em;
+    margin-bottom: 1em;
+    animation: fadeInDown 0.8s ease-in-out;
+}
+
+.historia p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    animation: fadeInUp 1s ease-in-out;
+}
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.imagen-container {
+    display: grid;
+    align-items: center;
+    animation: fadeInUp 1s ease-in-out;
+    margin-bottom: 2em; 
+}
+
+.imagen-container img {
+    height: 200px; 
+    width: auto; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out;
+}
+.imagen-container img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #008099;
+    color: white;
+    font-size: 1em;
+    margin-top: 2em;
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1
+

@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif; 
+    color: #333;
+    background-size: cover; 
+    background-position: center; 
+    border: 8px solid #fff; 
+    
+}
+
+header {
+    background-color: #008099;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header p {
+    font-size: 1.1em;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 1.5em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.5em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    border-bottom: 2px solid #33ffe4;
+}
+
+.intro-tecnologia {
+    padding: 3em 2em;
+    text-align: center;
+    background-color: rgb(175, 177, 177);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.intro-tecnologia h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+    animation: fadeInDown 0.8s ease-in-out;
+}
+
+.intro-tecnologia p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+    animation: fadeInUp 1s ease-in-out;
+}
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.avances {
+    padding: 3em 2em;
+    background-color: #f9fbfd;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.avances h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    animation: fadeInDown 0.8s ease-in-out;
+}
+
+.avance {
+    background-color: #fff;
+    margin: 1.5em auto;
+    padding: 2em;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.avance:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.avance h3 {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+    color: #006073;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.avance p {
+    font-size: 1em;
+    color: #555;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.faq {
+    padding: 3em 2em;
+    background-color: rgb(175, 177, 177);;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.faq h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #333;
+    animation: fadeInDown 0.8s ease-in-out;
+}
+
+.pregunta {
+    margin: 1em auto;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideInUp 1s ease-in-out;
+}
+
+.pregunta h4 {
+    font-size: 1.2em;
+    color: #006073;
+    margin-bottom: 0.5em;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.pregunta p {
+    font-size: 1em;
+    color: #555;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+footer {
+    background-color: #008099;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 0.9em;
+    margin-top: 2em;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    color: #ffbb33;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1

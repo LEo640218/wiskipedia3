@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Wiskipedia</title>
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body>
+
+<!-- Encabezado -->
+<header>
+    <h1>Contáctanos</h1>
+    <p>Dame tu opinion sobre esta pgina web.</p>
+    <nav>
+        <ul>
+            <li><a href="../index.html" >Inicio</a></li>
+            <li><a href="../html/tipos_de_aviones.htmll">Tipos de Aviones</a></li>
+            <li><a href="../html/historia.html">Historia</a></li>
+            <li><a href="../html/tecnologia.html">Tecnología</a></li>
+            <li><a href="../html/galeria.html">Galería</a></li>
+            <li><a href="../html/formulario.html"class="active">Formulario</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="formulario">
+    <h2>Formulario de Contacto</h2>
+    <form action="procesar_formulario.php" method="POST">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+        <div class="form-group">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <option value="" disabled selected>Seleccione su país</option>
+                <option value="México">México</option>
+                <option value="España">España</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Perú">Perú</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Uruguay">Uruguay</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="opinion">Opinión:</label>
+            <textarea id="opinion" name="opinion" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</section>
+<footer>
+    <p>&copy; 2024 Wiskipedia. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
